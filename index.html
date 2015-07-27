@@ -104,7 +104,7 @@
         <a href="#attention" class="tab-head-item">关注我们</a>
       </div>
       <div class="tab-content">
-        <div id="dangjian" class="clearfix">
+        <div id="dangjian" class="tab-item clearfix">
           <div class="news-box">
             <img class="news-img" src="public/img/news-img01.jpg" alt="">
             <div class="news-content">
@@ -138,11 +138,11 @@
             </div>
           </div>
         </div>
-        <div id="news" class="clearfix hide"></div>
-        <div id="media" class="clearfix hide"></div>
-        <div id="info" class="clearfix hide"></div>
-        <div id="consult" class="clearfix hide"></div>
-        <div id="attention" class="clearfix hide"></div>
+        <div id="news" class="tab-item clearfix hide"></div>
+        <div id="media" class="tab-item clearfix hide"></div>
+        <div id="info" class="tab-item clearfix hide"></div>
+        <div id="consult" class="tab-item clearfix hide"></div>
+        <div id="attention" class="tab-item clearfix hide"></div>
       </div>
     </div>
     <div class="side-nav pull-right clearfix" id="sideNav">
@@ -206,11 +206,19 @@
 
         // 如果需要分页器
         pagination: '.swiper-pagination',
+        paginationClickable: true,
 
         // 如果需要前进后退按钮
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev'
       });
+    });
+    /* tab */
+    $('.tab-head-item').hover(function () {
+      $('.tab-head-item ').removeClass('active');
+      $(this).addClass('active');
+      $('.tab-item').addClass('hide');
+      $($(this).attr('href')).removeClass('hide');
     });
   </script>
 </body>

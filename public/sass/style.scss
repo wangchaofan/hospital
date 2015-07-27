@@ -577,7 +577,7 @@ header {
   .icon-search {
     position: absolute;
     top: 10px;
-    left: 12px;
+    left: 10px;
   }
 }
 .btn-search {
@@ -724,7 +724,7 @@ nav {
   position: relative;
   margin-top: 24px;
   width: 430px;
-  padding-left: 18px;
+  padding-left: 10px;
   .news-content {
     float: right;
     width: 312px;
@@ -768,8 +768,10 @@ nav {
     }
   }
   .news-img {
-    width: 100px;
-    height: 100px;
+    width: 108px;
+    height: 108px;
+    padding: 2px;
+    border: 2px solid #f3f3f3;
   }
 }
 .side-nav {
@@ -827,6 +829,7 @@ footer {
     color: #bbb;
     .fa {
       margin-right: 8px;
+      cursor: pointer;
     }
     .fa-weibo {
       font-size: 24px;
