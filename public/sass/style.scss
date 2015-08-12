@@ -613,6 +613,12 @@ nav {
   z-index: 2;
   height: 112px;
   font-size: 0;
+  .nav-head {
+    cursor: pointer;
+    .icon {
+      opacity: .5;
+    }
+  }
   .nav-item {
     vertical-align: top;
     display: inline-block;
@@ -623,20 +629,88 @@ nav {
     &.current, 
     &:hover {
       .icon,
-      p {
+      p.title {
         opacity: 1;
       }
     }
-    span {
-      opacity: .5;
-    }
-    p {
+    p.title {
       margin-top: 6px;
       margin-bottom: 0;
       font-size: 16px;
       font-family: "microsoft yahei";
       color: #fff;
       opacity: .5;
+    }
+    .nav-content-container {
+      position: absolute;
+      top: 112px;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      display: none;
+      font-size: 0;
+      background-color: inherit;
+      padding: 16px 0 25px;
+      text-align: left;
+      .content {
+        width: 100%;
+      }
+      .left {
+        vertical-align: top;
+        width: 195px;
+        padding: 0 16px 0 8px;
+        display: inline-block;
+      }
+      .center {
+        vertical-align: top;
+        margin-left: 18px;
+        display: inline-block;
+        width: 328px;
+        color: #fff;
+        padding: 0 12px 10px 16px;
+        h3 {
+          margin: 0;
+          padding: 12px 0 8px;
+          font-family: "microsoft yahei";
+          font-size: 18px;
+        }
+        p {
+          margin: 0;
+          font-size: 12px;
+          line-height: 2;
+        }
+      }
+      .right {
+        margin-left: 18px;
+        display: inline-block;
+        width: 525px;
+        img {
+          width: 100%;
+        }
+      }
+      .sub-nav {
+        ul {
+          padding: 0;
+          margin: 0;
+          li {
+            list-style: none;
+            height: 50px;
+            padding: 16px 10px;
+            color: #fff;
+            font-size: 14px;
+            text-align: left;
+            border-bottom: 1px dashed #8eb962;
+            cursor: pointer;
+            &:last-child {
+              border-bottom: 0px;
+            }
+          }
+        }
+        .icon-arrow-right {
+          float: right;
+          margin-top: 4px;
+        }
+      }
     }
   }
   .sub-nav-container {
@@ -665,6 +739,81 @@ nav {
   }
 }
 
+.icon-arrow-right {
+  height: 9px;
+  width: 5px;
+  background: url('../img/arrow-right.png') no-repeat;
+}
+#summary {
+  .left,
+  .center {
+    background-color: #70ab29;
+  }
+}
+#guide {
+  .left,
+  .center {
+    background-color: #28abba;
+  }
+  .sub-nav {
+    li {
+      border-bottom-color: #62b9c5;
+    }
+  }
+}
+#department {
+  .left,
+  .center {
+    background-color: #007fbb;
+  }
+  .center {
+    padding: 0 8px 18px 20px;
+  }
+  .sub-nav {
+    li {
+      border-bottom-color: #5198c5;
+    }
+  }
+  .hot-depart-list {
+    margin-top: 6px;
+    font-size: 0;
+    .hot-depart-item {
+      margin-right: 8px;
+      margin-bottom: 12px;
+      display: inline-block;
+      width: 91px;
+      height: 24px;
+      border: 1px solid #fff;
+      font-size: 12px;
+      line-height: 24px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+#scientific {
+  .left,
+  .center {
+    background-color: #2b4ea7;
+  }
+  .sub-nav {
+    li {
+      border-bottom-color: #6377b6;
+    }
+  }
+}
+#volunteer {
+  .left,
+  .center {
+    background-color: #5e379d;
+  }
+  .sub-nav {
+    li {
+      border-bottom-color: #826aaf;
+    }
+  }
+}
 .icon-nav-home {
   width: 33px;
   height: 38px;
