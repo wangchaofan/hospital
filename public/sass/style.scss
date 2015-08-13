@@ -499,6 +499,10 @@ th {
 a {
   text-decoration: none;
 }
+.swiper-container {
+  margin: 0 auto;
+  max-width: 1660px;
+}
 /*home page*/
 * {
   -webkit-box-sizing: border-box;
@@ -1016,5 +1020,72 @@ footer {
     margin: 0;
     font-size: $fontSmall;
     color: #6a6a6a;
+  }
+}
+
+/* drguide pade */
+#banner {
+  position: relative;
+  margin-top: -55px;
+  z-index: 1;
+  text-align: center;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+#content {
+  .left-container {
+    float: left;
+    width: 200px;
+    height: 100%;
+    padding: 34px 18px;
+    background-color: #f3f3f3;
+    .aside-nav {
+      width: 100%;
+      background-color: #fff;
+      .header {
+        height: 80px;
+        padding: 16px 20px;
+        color: #fff;
+        font-family: "microsoft yahei";
+        background-color: #0086c5;
+        p.name-cn {
+          margin: 0;
+          font-size: 24px;
+        }
+        p.name-en {
+          margin: 0;
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+      }
+      .aside-nav-item {
+        height: 50px;
+        padding: 0 12px 0 16px;
+        font-family: "microsoft yahei";
+        font-size: 16px;
+        line-height: 50px;
+        color: #353535;
+        border-bottom: 1px dashed #f6f6f6;
+        cursor: pointer;
+        &:last-child {
+          border-bottom: 0;
+        }
+        &:hover,
+        &.selected {
+          color: #0086c5;
+          i {
+            color: #a3c8e3;
+          }
+        }
+        i {
+          float: right;
+          font-size: 18px;
+          color: #bcbcbc;
+          line-height: 50px;
+        }
+      }
+    }
   }
 }
