@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>首页</title>
+  <title>门诊排版</title>
   <link rel="stylesheet" href="public/css/font-awesome.min.css">
   <link rel="stylesheet" href="public/css/style.css">
   <link rel="stylesheet" href="public/css/swiper3.1.0.min.css">
@@ -36,7 +36,7 @@
     </div>
     <!-- 导航 -->
     <nav role="nav">
-      <a class="nav-item current" href="/" style="background-color: #f27e00;">
+      <a class="nav-item" href="/" style="background-color: #f27e00;">
           <span class="icon icon-nav-home"></span>
           <p class="title">首页</p>
         </a>
@@ -66,7 +66,7 @@
           </div>
         </div>
       </a>
-      <a class="nav-item" id="guide" style="background-color: #3bb3c1;">
+      <a class="nav-item current" id="guide" style="background-color: #3bb3c1;">
         <div class="nav-head">
           <span class="icon icon-nav-guide"></span>
           <p class="title">就医指南</p>
@@ -193,110 +193,127 @@
       </div>
     </nav>
   </div>
-  <!-- banner轮播 -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <a href=""><img src="public/img/banner01.jpg" alt=""></a>
-      </div>
-      <div class="swiper-slide">
-        <a href=""><img src="public/img/banner01.jpg" alt=""></a>
-      </div>
-      <div class="swiper-slide">
-         <a href=""><img src="public/img/banner01.jpg" alt=""></a>
-      </div>
-    </div>
-    <!-- 如果需要分页器 -->
-    <div class="swiper-pagination"></div>
-    <!-- 如果需要导航按钮 -->
-    <div class="swiper-button-prev">
-      <i class="fa fa-angle-left"></i>
-    </div>
-    <div class="swiper-button-next">
-      <i class="fa fa-angle-right"></i>
-    </div>
+  <!-- banner -->
+  <div id="banner">
+    <img src="public/img/department_banner.jpg" alt="">
   </div>
   <!-- content -->
-  <div class="wrapper clearfix">
-    <div class="tab pull-left" id="tab">
-      <div class="tab-head">
-        <a href="#dangjian" class="tab-head-item active">党团建设</a> |
-        <a href="#news" class="tab-head-item">医院新闻</a> |
-        <a href="#media" class="tab-head-item">媒体报道</a> |
-        <a href="#info" class="tab-head-item">健康资讯</a> |
-        <a href="#consult" class="tab-head-item">网上咨询</a> |
-        <a href="#attention" class="tab-head-item">关注我们</a>
-      </div>
-      <div class="tab-content">
-        <div id="dangjian" class="tab-item clearfix">
-          <div class="news-box">
-            <img class="news-img" src="public/img/news-img01.jpg" alt="">
-            <div class="news-content">
-              <div class="news-title">关注眼健康记大学城医院眼</div>
-              <div class="news-text">我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院长</div>
-              <div class="news-bottom">
-                <span class="news-date">2015-05-01</span>
-                <a class="view-detail" href="">查看详情<i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div><div class="news-box">
-          <img class="news-img" src="public/img/news-img01.jpg" alt="">
-          <div class="news-content">
-            <div class="news-title">关注眼健康记大学城医院眼</div>
-            <div class="news-text">我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院长</div>
-            <div class="news-bottom">
-              <span class="news-date">2015-05-01</span>
-              <a class="view-detail" href="">查看详情<i class="fa fa-angle-right"></i></a>
-            </div>
+  <div id="content" class="wrapper clearfix">
+    <div class="left-container">
+      <div class="aside-nav">
+        <div class="header">
+          <p class="name-cn">科室导航</p>
+          <p class="name-en">Department</p>
+        </div>
+        <div>
+          <div class="aside-nav-item">
+            科室列表 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item selected">
+            门诊排版 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item">
+            名医荟萃 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item">
+            医保专区 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item">
+            楼层分布 <i class="fa fa-angle-right"></i>
           </div>
         </div>
-          <div class="news-box">
-            <img class="news-img" src="public/img/news-img01.jpg" alt="">
-            <div class="news-content">
-              <div class="news-title">关注眼健康记大学城医院眼</div>
-              <div class="news-text">我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院 长我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院长  长我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院长  长我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院长</div>
-              <div class="news-bottom">
-                <span class="news-date">2015-05-01</span>
-                <a class="view-detail" href="">查看详情<i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="news" class="tab-item clearfix hide"></div>
-        <div id="media" class="tab-item clearfix hide"></div>
-        <div id="info" class="tab-item clearfix hide"></div>
-        <div id="consult" class="tab-item clearfix hide"></div>
-        <div id="attention" class="tab-item clearfix hide"></div>
       </div>
     </div>
-    <div class="side-nav pull-right clearfix" id="sideNav">
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: 0 0;"></span>
-        <p>医院交通</p>
-      </a>
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: -250px 0;"></span>
-        <p>门诊时间</p></a>
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: -50px 0;"></span>
-        <p>义工报名</p>
-      </a>
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: -100px 0;"></span>
-        <p>科研申报</p>
-      </a>
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: -150px 0;"></span>
-        <p>预约挂号</p>
-      </a>
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: -200px 0;"></span>
-        <p>名医荟萃</p>
-      </a>
+    <div class="center-container">
+      <div class="header">
+         <span class="snav">
+        <i class="fa fa-home"></i>
+      </span>
+      <span class="snav">
+         科室导航
+      </span>
+      <span class="snav">
+        科室列表
+      </span>
+      </div>
+      <div class="content">
+        <div class="title">
+          <span>学术团队</span>
+        </div>
+        <div class="search-container">
+          <select class="search-input" placeholder="请选择科室"></select>
+          <input class="search-input" type="search" placeholder="请输入医生姓名"/>
+          <input class="search-input" type="search" placeholder="请选择时间"/>
+          <div class="btn btn-submit">搜索</div>
+        </div>
+        <table class="table" id="scheduTable" border="1" cellspacing="0" cellpadding="0">
+          <thead>
+            <th>科室</th>
+            <th>专家</th>
+            <th>出诊时间</th>
+            <th>当前挂号</th>
+            <th>剩余挂号</th>
+            <th>专长</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>科室</td>
+              <td>专家</td>
+              <td>出诊时间</td>
+              <td>当前挂号</td>
+              <td>剩余挂号</td>
+              <td>专长</td>
+            </tr>
+            <tr>
+              <td>科室</td>
+              <td>专家</td>
+              <td>出诊时间</td>
+              <td>当前挂号</td>
+              <td>剩余挂号</td>
+              <td>专长</td>
+            </tr>
+            <tr>
+              <td>科室</td>
+              <td>专家</td>
+              <td>出诊时间</td>
+              <td>当前挂号</td>
+              <td>剩余挂号</td>
+              <td>专长</td>
+            </tr>
+            <tr>
+              <td>科室</td>
+              <td>专家</td>
+              <td>出诊时间</td>
+              <td>当前挂号</td>
+              <td>剩余挂号</td>
+              <td>专长</td>
+            </tr>
+            <tr>
+              <td>科室</td>
+              <td>专家</td>
+              <td>出诊时间</td>
+              <td>当前挂号</td>
+              <td>剩余挂号</td>
+              <td>专长</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagebar" style="margin: 40px 0;">
+          <span class="btn btn-page-up" data-role="uppage"><i class="fa fa-angle-left"></i>上一页</span>
+          <span class="page-number-list">
+            <i class="btn btn-page-num current">1</i>
+            <i class="btn btn-page-num">2</i>
+            <i class="btn btn-page-num">3</i>
+            <i class="page-shenglue">…</i>
+            <i class="btn btn-page-num last">20</i>
+          </span>
+          <span class="btn btn-page-down" data-role="down">下一页<i class="fa fa-angle-right"></i></span>
+        </div>
+      </div>
     </div>
   </div>
   <!-- footer -->
-  <footer style="margin-top: 28px;">
+  <footer>
     <div class="container clearfix">
       <div class="pull-left" id="logoAndSc">
         <a href="/"><img class="logo" src="public/img/footer-logo.jpg" alt="logo"/></a>
@@ -326,34 +343,20 @@
   <script src="http://cdn.bootcss.com/Swiper/3.1.0/js/swiper.jquery.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-      var mySwiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: 3000,
-
-        // 如果需要分页器
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-
-        // 如果需要前进后退按钮
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',  
-
-        hashnav: true
+      /* nav */
+      $('.nav-item').hover(function () {
+        $('.nav-content-container').hide();
+        $(this).find('.nav-content-container').show();
+      }, function () {
+        $(this).find('.nav-content-container').hide();
       });
-    });
-    /* nav */
-    $('.nav-item').hover(function () {
-      $('.nav-content-container').hide();
-      $(this).find('.nav-content-container').show();
-    }, function () {
-      $(this).find('.nav-content-container').hide();
-    });
-    /* tab */
-    $('.tab-head-item').hover(function () {
-      $('.tab-head-item ').removeClass('active');
-      $(this).addClass('active');
-      $('.tab-item').addClass('hide');
-      $($(this).attr('href')).removeClass('hide');
+      /* tab */
+      $('.tab-head-item').hover(function () {
+        $('.tab-head-item ').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-item').addClass('hide');
+        $($(this).attr('href')).removeClass('hide');
+      });
     });
   </script>
 </body>

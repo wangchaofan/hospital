@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>首页</title>
+  <title>科研教学</title>
   <link rel="stylesheet" href="public/css/font-awesome.min.css">
   <link rel="stylesheet" href="public/css/style.css">
   <link rel="stylesheet" href="public/css/swiper3.1.0.min.css">
@@ -36,7 +36,7 @@
     </div>
     <!-- 导航 -->
     <nav role="nav">
-      <a class="nav-item current" href="/" style="background-color: #f27e00;">
+      <a class="nav-item" href="/" style="background-color: #f27e00;">
           <span class="icon icon-nav-home"></span>
           <p class="title">首页</p>
         </a>
@@ -66,7 +66,7 @@
           </div>
         </div>
       </a>
-      <a class="nav-item" id="guide" style="background-color: #3bb3c1;">
+      <a class="nav-item current" id="guide" style="background-color: #3bb3c1;">
         <div class="nav-head">
           <span class="icon icon-nav-guide"></span>
           <p class="title">就医指南</p>
@@ -193,110 +193,82 @@
       </div>
     </nav>
   </div>
-  <!-- banner轮播 -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <a href=""><img src="public/img/banner01.jpg" alt=""></a>
-      </div>
-      <div class="swiper-slide">
-        <a href=""><img src="public/img/banner01.jpg" alt=""></a>
-      </div>
-      <div class="swiper-slide">
-         <a href=""><img src="public/img/banner01.jpg" alt=""></a>
-      </div>
-    </div>
-    <!-- 如果需要分页器 -->
-    <div class="swiper-pagination"></div>
-    <!-- 如果需要导航按钮 -->
-    <div class="swiper-button-prev">
-      <i class="fa fa-angle-left"></i>
-    </div>
-    <div class="swiper-button-next">
-      <i class="fa fa-angle-right"></i>
-    </div>
+  <!-- banner -->
+  <div id="banner">
+    <img src="public/img/department_banner.jpg" alt="">
   </div>
   <!-- content -->
-  <div class="wrapper clearfix">
-    <div class="tab pull-left" id="tab">
-      <div class="tab-head">
-        <a href="#dangjian" class="tab-head-item active">党团建设</a> |
-        <a href="#news" class="tab-head-item">医院新闻</a> |
-        <a href="#media" class="tab-head-item">媒体报道</a> |
-        <a href="#info" class="tab-head-item">健康资讯</a> |
-        <a href="#consult" class="tab-head-item">网上咨询</a> |
-        <a href="#attention" class="tab-head-item">关注我们</a>
-      </div>
-      <div class="tab-content">
-        <div id="dangjian" class="tab-item clearfix">
-          <div class="news-box">
-            <img class="news-img" src="public/img/news-img01.jpg" alt="">
-            <div class="news-content">
-              <div class="news-title">关注眼健康记大学城医院眼</div>
-              <div class="news-text">我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院长</div>
-              <div class="news-bottom">
-                <span class="news-date">2015-05-01</span>
-                <a class="view-detail" href="">查看详情<i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div><div class="news-box">
-          <img class="news-img" src="public/img/news-img01.jpg" alt="">
-          <div class="news-content">
-            <div class="news-title">关注眼健康记大学城医院眼</div>
-            <div class="news-text">我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院长</div>
-            <div class="news-bottom">
-              <span class="news-date">2015-05-01</span>
-              <a class="view-detail" href="">查看详情<i class="fa fa-angle-right"></i></a>
-            </div>
+  <div id="content" class="wrapper clearfix">
+    <div class="left-container">
+      <div class="aside-nav">
+        <div class="header">
+          <p class="name-cn">科研教学</p>
+          <p class="name-en">Research Teaching</p>
+        </div>
+        <div>
+          <div class="aside-nav-item">
+            科研申报 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item">
+            学术团队 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item">
+            院内教学 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item">
+            进修培训 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item">
+            重点学科 <i class="fa fa-angle-right"></i>
           </div>
         </div>
-          <div class="news-box">
-            <img class="news-img" src="public/img/news-img01.jpg" alt="">
-            <div class="news-content">
-              <div class="news-title">关注眼健康记大学城医院眼</div>
-              <div class="news-text">我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院 长我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院长  长我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院长  长我院的MRI第一次论证在门诊五楼招标室如期会议由贾立副院长</div>
-              <div class="news-bottom">
-                <span class="news-date">2015-05-01</span>
-                <a class="view-detail" href="">查看详情<i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="news" class="tab-item clearfix hide"></div>
-        <div id="media" class="tab-item clearfix hide"></div>
-        <div id="info" class="tab-item clearfix hide"></div>
-        <div id="consult" class="tab-item clearfix hide"></div>
-        <div id="attention" class="tab-item clearfix hide"></div>
       </div>
     </div>
-    <div class="side-nav pull-right clearfix" id="sideNav">
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: 0 0;"></span>
-        <p>医院交通</p>
-      </a>
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: -250px 0;"></span>
-        <p>门诊时间</p></a>
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: -50px 0;"></span>
-        <p>义工报名</p>
-      </a>
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: -100px 0;"></span>
-        <p>科研申报</p>
-      </a>
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: -150px 0;"></span>
-        <p>预约挂号</p>
-      </a>
-      <a class="side-nav-item" href="">
-        <span class="icon" style="background-position: -200px 0;"></span>
-        <p>名医荟萃</p>
-      </a>
+    <div class="center-container">
+      <div class="header">
+         <span class="snav">
+        <i class="fa fa-home"></i>
+      </span>
+      <span class="snav">
+         科室导航
+      </span>
+      <span class="snav">
+        名医荟萃
+      </span>
+      </div>
+      <div class="content">
+        <div class="title">
+          <span>名医荟萃</span>
+        </div>
+        <div class="doctor-detail clearfix">
+          <img class="doctor-img pull-left" src="public/img/doc-img.jpg" alt=""/>
+          <div class="detial-info pull-right">
+            <div class="name">李彦龙</div>
+            <div class="basic-info">
+              <span><b>科室名称：</b>重症医学科</span>
+              <span><b>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务：</b>重症医学科</span>
+              <span><b>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</b>重症医学科</span>
+              <span><b>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历：</b>重症医学科</span>
+              <span><b>专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长：</b>重症医学科</span>
+              <span><b>主攻学科：</b>重症医学科</span>
+              <span><b>研究方向：</b>重症医学科</span>
+              <span><b>科研成果：</b>重症医学科</span>
+            </div>
+            <div class="resume">
+              <h3>简&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历：</h3>
+              <p>
+                严静，1962年11月出生，1984年毕业于浙江医科大学医疗系，后获硕士学位。重症医学科及心内科主任医师、教授、博士生导师。现任浙江医院院长、党委副书记，并任中华医学会重症医学分会常委、中国病理生理学会重症学专业委员会常委、中国医师协会老年医学医师分会常委、卫生部ICU考试专家委员会副主任、浙江省医学会重症医学分会候任主任委员、浙江省医学会老年病分会主任委员、浙江省ICU质控中心主任、浙江省心脑血管病防治研究中心专家委员会主任委员，为国家临床重点专科重症医学、浙江省医学重点学科群老年医学和重点学科重症医学学科带头人。从事心血管与重症医学临床及研究三十余年，在多种心血管疾病如冠心病、急性心肌梗塞、各种严重心律失常、心力衰竭及多脏器功能衰竭等方面具有丰富的诊治与抢救经验。负责制定国内《严重感染与感染性休克的血流动力学监测与支持指南》、《中国重症加强治疗病房(ICU)建设与管理指南》等多项指南；《中华内科学杂志》、《中华老年多器官疾病杂志》、《浙江医学》、《中国危重病急救医学》杂志编委，《心脑血管病防治》杂志社社长。在浙江省内承担重症病人多器官功能障碍救治、严重感染与感染性休克、严重心衰、心律失常和血流动力学等的技术指导。
+                2005年获“浙江省突出贡献中青年专家”称号，2009年获浙江省优秀医师奖，2010年获第七届中国优秀医师奖，2011年享受国务院政府特殊津贴，同年获全国“五一劳动奖章”。2012年获全国优秀医院院长荣誉称号。
+                导师。现任浙江医院院长、党委副书记，并任中华医学会重症医学分会常委、中国病理生理学会重症学专业委员会常委、中国医师协会老年医学医师分会常委、卫生部ICU考试专家委员会副主任、浙江省医学会重症医学分会候任主任委员、浙江省医学会老年病分会主任委员、浙江省ICU质控中心主任、浙江省心脑血管病防治研究中心专家委员会主任委员，为国家临床重点专科重症医学、浙江省医学重点学科群老年医学和重点学科重症医学学科带头人。从事心血管与重症医学临床及研究三十余年，在多种心血管疾病如冠心病、急性心肌梗塞、各种严重心律失常、心力衰竭及多脏器功能衰竭等方面具有丰富的诊治与抢救经验。负责制定国内《严重感染与感染性休克的血流动力学监测与支持指南》、《中国重症加强治疗病房(ICU)建设与管理指南》等多项指南；《中华内科学杂志》、《中华老年多器官疾病杂志》、《浙江医学》、《中国危重病急救医学》杂志编委，《心脑血管病防治》杂志社社长。在浙江省内承担重症病人多器官功能障碍救治、严重感染与感染性休克、严重心衰、心律失常和血流动力学等的技术指导。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- footer -->
-  <footer style="margin-top: 28px;">
+  <footer>
     <div class="container clearfix">
       <div class="pull-left" id="logoAndSc">
         <a href="/"><img class="logo" src="public/img/footer-logo.jpg" alt="logo"/></a>
@@ -326,34 +298,20 @@
   <script src="http://cdn.bootcss.com/Swiper/3.1.0/js/swiper.jquery.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-      var mySwiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: 3000,
-
-        // 如果需要分页器
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-
-        // 如果需要前进后退按钮
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',  
-
-        hashnav: true
+      /* nav */
+      $('.nav-item').hover(function () {
+        $('.nav-content-container').hide();
+        $(this).find('.nav-content-container').show();
+      }, function () {
+        $(this).find('.nav-content-container').hide();
       });
-    });
-    /* nav */
-    $('.nav-item').hover(function () {
-      $('.nav-content-container').hide();
-      $(this).find('.nav-content-container').show();
-    }, function () {
-      $(this).find('.nav-content-container').hide();
-    });
-    /* tab */
-    $('.tab-head-item').hover(function () {
-      $('.tab-head-item ').removeClass('active');
-      $(this).addClass('active');
-      $('.tab-item').addClass('hide');
-      $($(this).attr('href')).removeClass('hide');
+      /* tab */
+      $('.tab-head-item').hover(function () {
+        $('.tab-head-item ').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-item').addClass('hide');
+        $($(this).attr('href')).removeClass('hide');
+      });
     });
   </script>
 </body>

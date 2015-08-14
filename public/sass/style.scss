@@ -901,7 +901,11 @@ nav {
       font-size: $fontBase;
       font-family: "microsoft yahei";
       line-height: 20px;
-      color: #009dbc;
+      color: #010101;
+      cursor: pointer;
+      &:hover {
+        color: #23a3b5;
+      }
     }
     .news-text {
       margin-bottom: 14px;
@@ -970,7 +974,6 @@ nav {
   }
 }
 footer {
-  margin-top: 28px;
   border-top: 3px solid #0083d3;
   padding-top: 40px;
   background-color: #eaeaea;
@@ -1042,17 +1045,17 @@ footer {
   overflow: hidden;
   .left-container {
     float: left;
-    margin-bottom: -999px;
+    margin-bottom: -9999px;
     width: 200px;
     height: 100%;
-    padding: 34px 18px 999px;
+    padding: 34px 18px 9999px;
     background-color: #f3f3f3;
     .aside-nav {
       width: 100%;
       background-color: #fff;
       .header {
         height: 80px;
-        padding: 16px 20px;
+        padding: 16px 0 16px 18px;
         color: #fff;
         font-family: "microsoft yahei";
         background-color: #0086c5;
@@ -1119,13 +1122,15 @@ footer {
       }
     }
     .content {
-      padding: 10px 18px 30px 24px;
+      padding: 10px 18px 30px 34px;
       .title {
         border-bottom: 1px dashed #f3f3f3;
-        padding: 13px 0;
+        line-height: 40px;
         span {
+          display: inline-block;
+          vertical-align: bottom;
+          margin-bottom: -1px;
           font-size:  20px;
-          padding: 14px 0;
           font-family: "microsoft yahei";
           color: #010101;
           border-bottom: 1px solid #0086c5;
@@ -1157,7 +1162,7 @@ footer {
     padding: 0;
     font-size: 0;
     .subject-box {
-      width: 171px;
+      width: 169px;
       height: 44px;
       border: 1px solid #fff;
       display: inline-block;
@@ -1186,8 +1191,10 @@ footer {
     width: 100%;
     padding: 0 !important;
     margin-top: 24px;
+    overflow: hidden;
   }
   .detail {
+    padding-bottom: 30px;
     width: 884px;
     border-top: 1px solid #f3f3f3;
     border-left: 1px solid #f3f3f3;
@@ -1205,11 +1212,7 @@ footer {
     width: 100%;
     padding: 0 18px;
     .title {
-      padding: 9px 0 !important;
-      span {
-        font-size: 16px !important;
-        padding: 10px 0 !important;
-      }
+      line-height: 32px;
     }
   }
 }
@@ -1250,5 +1253,347 @@ footer {
     display: block;
     width: 113px;
     height: 144px;
+  }
+}
+.subject-nav {
+  width: 200px;
+  height: 100%;
+  padding-bottom: 9999px;
+  margin-bottom: -9999px;
+  background-color: #f9f9f9;
+  h2 {
+    margin: 0;
+    height: 48px;
+    padding-left: 12px;
+    font: 24px/50px "microsoft yahei";
+    color: #fff;
+    background-color: #0086c5;
+  }
+  .subject-list {
+    margin: 0;
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+    padding-left: 28px;
+    .subject-item {
+      height: 48px;
+      list-style: square;
+      color: #8e8e8e;
+      border-bottom: 1px dashed #ececec;
+      &:hover {
+        color: #0086c5;
+        a {
+          color: #0086c5;
+        }
+      }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        line-height: 48px;
+        color: #010101;
+      }
+    }
+  }
+}
+#departState  {
+  .news-box {
+    width: 422px;
+    padding-left: 0;
+    .news-content {
+      padding-right: 25px;
+    }
+  }
+}
+.input-row {
+  margin-top: 33px;
+  .hs-input-bg {
+    margin-left: 6px;
+  }
+}
+.hs-label {
+  vertical-align: top;
+  display: inline-block;
+  height: 35px;
+  font-size: 16px;
+  line-height: 35px;
+  color: #010101;
+}
+.tip {
+  padding: 6px 0 0 54px;
+  font-size: 12px;
+  color: #777;
+  span {
+    color: #d71414;
+  }
+}
+.hs-input-bg {
+  width: 422px;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 35px;
+  color: #777;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  background-color: #fff;
+  &:focus {
+    outline: none;
+  }
+}
+.center-container {
+  form {
+    padding-top: 30px;
+    padding-left: 144px;
+    padding-right: 230px;
+    textarea {
+      height: 228px;
+      resize: none;
+    }
+    .btn-submit {
+      margin-top: 30px;
+      margin-right: 12px;
+    }
+  }
+}
+.required-tag {
+  margin-top: 10px;
+  vertical-align: top;
+  display: inline-block;
+  font-style: normal;
+  font-size: 16px;
+  color: #d71414;
+}
+.btn-submit {
+  padding: 0;
+  width: 154px;
+  height: 35px;
+  font-size: 14px;
+  line-height: 35px;
+  color: #fff;
+  background-color: #f27e00;
+  &:hover {
+    background-color: #FF890A;
+  }
+}
+.doctor-intro-box {
+  margin-bottom: 33px;
+  height: 265px;
+  padding-bottom: 33px;
+  border-bottom: 1px dashed #f3f3f3;
+  &:last-child {
+    border-bottom: 0;
+  }
+  .doctor-img {
+    float: left;
+    height: 100%;
+    width: 167px;
+  }
+  .doctor-info {
+    float: right;
+    width: 658px;
+    .name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #010101;
+    }
+  }
+  .basic-info {
+    margin-top: 5px;
+    span {
+      margin-right: 30px;
+      display: inline-block;
+      font-size: 12px;
+      color: #777;
+    }
+    .bt {
+      font-weight: 700;
+      font-style: normal;
+    }
+  }
+  .resume {
+    margin-top: 16px;
+    height: 98px;
+    font-size: 12px;
+    color: #777;
+    line-height: 2;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .btn-primary {
+    margin-top: 15px;
+  }
+}
+
+.btn-primary {
+  padding: 6px 10px 6px 16px ;
+  background-color: #0086c5;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+  i {
+    margin-left: 8px;
+    vertical-align: -1px;
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: #f27e00;
+  }
+}
+.pagebar {
+  font-size: 0;
+  text-align: center;
+  span {
+    vertical-align: top;
+  }
+  .btn-page-up,
+  .btn-page-down {
+    width: 84px;
+    height: 28px;
+    border: 1px solid #b8b8b8;
+    font-size: 14px;
+    line-height: 26px;
+    border-radius: 0;
+    color: #595757;
+    i {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &:hover {
+      background-color: #0086c5;
+      color: #fff;
+    }
+  }
+  .page-shenglue {
+    vertical-align: top;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #595757;
+  }
+  .btn-page-num {
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+    font: normal 14px/26px Arial;
+    color: #595757;
+    border: 1px solid #b8b8b8;
+    border-radius: 0;
+    &.last {
+      margin: 0;
+    }
+    &.current {
+      background-color: #0086c5;
+      color: #fff;
+    }
+    &:hover {
+      @extend .current;
+    }
+  }
+  .btn-page-up {
+    margin-right: 22px;
+    i {
+      margin-right: 8px;
+    }
+  }
+  .btn-page-down {
+    margin-left: 22px;
+    i {
+      margin-left: 8px;
+    }
+  }
+}
+
+/* doctor-detail */
+.doctor-detail {
+  margin-top: 44px;
+}
+.detial-info {
+  width: 660px;
+  .name {
+    font-family: "microsoft yahei";
+    font-size: 18px;
+    color: #010101;
+  }
+  .basic-info {
+    padding: 20px 0;
+    font-size: 12px;
+    color: #777;
+    line-height: 2;
+    border-bottom: 1px dashed #ececec;
+    span {
+      display: block;
+      b {
+        font-family: "microsoft yahei";
+      }
+    }
+  }
+  .resume {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 2;
+    color: #777;
+    h3 {
+      margin: 0;
+      font-weight: 700;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.search-container {
+  margin: 30px 0;
+  height: 88px;
+  background-color: #0086c5;
+  text-align: center;
+  padding-top: 28px;
+  .btn-submit {
+    width: 72px;
+  }
+  select {
+    width: 190px !important;
+  }
+  .search-input {
+    margin-right: 6px;
+    width: 166px;
+    height: 35px;
+    outline: none;
+    border: none;
+    padding: 0 12px;
+    font-size: 12px;
+    color: #777;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}
+.table {
+  width: 100%;
+  border: none;
+  border-color: #e8e8e8;
+  thead {
+    background-color: #e8e8e8;
+    th {
+      padding: 12px 0;
+      font-weight: 400;
+      font-size: 14px;
+      color: #404040;
+    }
+  }
+  tbody {
+    td {
+      padding: 14px 0;
+      font-size: 12px;
+      color: #010101;
+      background-color: #fff;
+      text-align: center;
+    }
   }
 }
