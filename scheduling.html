@@ -248,12 +248,12 @@
         </div>
         <table class="table" id="scheduTable" border="1" cellspacing="0" cellpadding="0">
           <thead>
-            <th>科室</th>
-            <th>专家</th>
-            <th>出诊时间</th>
-            <th>当前挂号</th>
-            <th>剩余挂号</th>
-            <th>专长</th>
+            <th row-name="subject">科室</th>
+            <th row-name="expert">专家</th>
+            <th row-name="time">出诊时间</th>
+            <th row-name="nowregister">当前挂号</th>
+            <th row-name="residueregister">剩余挂号</th>
+            <th row-name="speciality">专长</th>
           </thead>
           <tbody>
             <tr>
@@ -265,7 +265,7 @@
               <td>专长</td>
             </tr>
             <tr>
-              <td>科室</td>
+              <td style="width: 150px">科室</td>
               <td>专家</td>
               <td>出诊时间</td>
               <td>当前挂号</td>
@@ -273,7 +273,7 @@
               <td>专长</td>
             </tr>
             <tr>
-              <td>科室</td>
+              <td style="width: 150px">科室</td>
               <td>专家</td>
               <td>出诊时间</td>
               <td>当前挂号</td>
@@ -281,7 +281,7 @@
               <td>专长</td>
             </tr>
             <tr>
-              <td>科室</td>
+              <td style="width: 150px">科室</td>
               <td>专家</td>
               <td>出诊时间</td>
               <td>当前挂号</td>
@@ -289,7 +289,7 @@
               <td>专长</td>
             </tr>
             <tr>
-              <td>科室</td>
+              <td style="width: 150px">科室</td>
               <td>专家</td>
               <td>出诊时间</td>
               <td>当前挂号</td>
@@ -341,23 +341,6 @@
     </div>
   </footer>
   <script src="http://cdn.bootcss.com/Swiper/3.1.0/js/swiper.jquery.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      /* nav */
-      $('.nav-item').hover(function () {
-        $('.nav-content-container').hide();
-        $(this).find('.nav-content-container').show();
-      }, function () {
-        $(this).find('.nav-content-container').hide();
-      });
-      /* tab */
-      $('.tab-head-item').hover(function () {
-        $('.tab-head-item ').removeClass('active');
-        $(this).addClass('active');
-        $('.tab-item').addClass('hide');
-        $($(this).attr('href')).removeClass('hide');
-      });
-    });
-  </script>
+  <script src="public/js/main.js"></script>
 </body>
 </html>
