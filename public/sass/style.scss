@@ -620,6 +620,8 @@ nav {
   height: 112px;
   font-size: 0;
   .nav-head {
+    display: block;
+    padding-top: 23px;
     cursor: pointer;
     .icon {
       opacity: .5;
@@ -630,7 +632,6 @@ nav {
     display: inline-block;
     width: 166px;
     height: 112px;
-    padding-top: 23px;
     text-align: center;
     &.current, 
     &:hover {
@@ -701,12 +702,15 @@ nav {
           li {
             list-style: none;
             height: 50px;
-            padding: 16px 10px;
-            color: #fff;
-            font-size: 14px;
-            text-align: left;
             border-bottom: 1px dashed #8eb962;
             cursor: pointer;
+            a {
+              display: block;
+              padding: 16px 10px;
+              font-size: 14px;
+              text-align: left;
+              color: #fff;
+            }
             &:last-child {
               border-bottom: 0px;
             }
@@ -898,11 +902,15 @@ nav {
     padding-right: 8px;
     .news-title {
       height: 30px;
-      font-size: $fontBase;
-      font-family: "microsoft yahei";
-      line-height: 20px;
-      color: #010101;
-      cursor: pointer;
+      a {
+        font-size: $fontBase;
+        font-family: "microsoft yahei";
+        line-height: 20px;
+        color: #010101;
+        &:hover {
+          color: #23a3b5;
+        }
+      }
       &:hover {
         color: #23a3b5;
       }
@@ -1070,6 +1078,7 @@ footer {
         }
       }
       .aside-nav-item {
+        display: block;
         height: 50px;
         padding: 0 12px 0 16px;
         font-family: "microsoft yahei";
@@ -1161,15 +1170,18 @@ footer {
       height: 44px;
       border: 1px solid #fff;
       display: inline-block;
-      font-size: 14px;
-      line-height: 43px;
-      color: #010101;
-      text-align: center;
-      background-color: #ededed;
       cursor: pointer;
-      &:hover {
-        color: #fff;
-        background-color: #ed741a;
+      a {
+        display: block;
+        font-size: 14px;
+        line-height: 43px;
+        color: #010101;
+        text-align: center;
+        background-color: #ededed;
+        &:hover {
+          color: #fff;
+          background-color: #ed741a;
+        }
       }
     }
   }
@@ -1270,23 +1282,29 @@ footer {
     border-right: 1px solid #f3f3f3;
     padding-left: 28px;
     .subject-item {
+      position: relative;
       height: 48px;
+      line-height: 48px;
       list-style: square;
       color: #8e8e8e;
-      border-bottom: 1px dashed #ececec;
       &:hover {
         color: #0086c5;
-        a {
-          color: #0086c5;
-        }
       }
       a {
+        position: absolute;
+        left: -28px;
+        top: 0;
         display: block;
-        width: 100%;
-        height: 100%;
+        width: 200px;
+        height: 48px;
+        padding-left: 28px;
+        border-bottom: 1px dashed #ececec;
         font-size: 14px;
         line-height: 48px;
         color: #010101;
+        &:hover {
+            color: #0086c5;
+        }
       }
     }
   }
@@ -1341,7 +1359,7 @@ footer {
   form {
     padding-top: 30px;
     padding-left: 144px;
-    padding-right: 230px;
+    padding-right: 224px;
     textarea {
       height: 228px;
       resize: none;
@@ -1632,10 +1650,12 @@ footer {
     height: 118px;
   }
   .newsletter-title {
-    font-family: "microsoft yahei";
-    font-size: 18px;
-    line-height: 30px;
-    color: #010101;
+    a {
+      font-family: "microsoft yahei";
+      font-size: 18px;
+      line-height: 30px;
+      color: #010101;
+    }
   }
   .newsletter-content {
     height: 45px;
