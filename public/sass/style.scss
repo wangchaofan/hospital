@@ -1036,6 +1036,73 @@ nav {
   line-height: 38px;
   background: rgba(0,0,0,.6);
 }
+#history ul {
+  margin: 0;
+  padding: 0;
+}
+.history-box {
+  position: relative;
+  margin-top: 45px;
+  height: 82px;
+  &.start {
+    .start-circle {
+      background: #0086c5;
+      border: none !important;
+    }
+  }
+  &.end {
+    .line {
+      display: none;
+    }
+  }
+  .time {
+    float: left;
+    width: 120px;
+    padding-top: 36px;
+    padding-right: 16px;
+    font-size:14px;
+    color: #585858;
+    text-align: right;
+  }
+  .time-line {
+    position: absolute;
+    text-align: center;
+    left: 118px;
+    top: 40px;
+    .start-circle {
+      width: 13px;
+      height: 13px;
+      border: 1px solid #ccc;
+      border-radius: 100%;
+    }
+    .line {
+      margin-left: 6px;
+      width: 1px;
+      height: 114px;
+      background: #ccc;
+    }
+  }
+}
+.history-content {
+  margin-left: 148px;
+  img {
+    float: left;
+    width: 120px;
+    height: 82px;
+  }
+  .text {
+    padding-top: 6px;
+    padding-left: 22px;
+    display: inline-block;
+    width: 580px;
+    font-size: 14px;
+    color: #585858;
+    line-height: 20px;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+}
+
 .news-box {
   float: left;
   position: relative;
