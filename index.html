@@ -240,13 +240,29 @@
     </div>
   </div>
   <!-- 滚动新闻 -->
-  <div class="scroll-news-wrap">
+  <div class="scroll-news">
     <div class="container">
       <span class="icon icon-trumpet"></span>
-      <span class="scroll-news">
-        <a href="">热烈祝贺沙区眼科医疗质控中心启动会在我院成功召开</a>
-        <span class="time">2015-05-01</span>
-      </span>
+      <div class="scroll-news-wrap">
+        <div class="scroll-news-content">
+          <div class="scroll-news-item">
+            <a href="">热烈祝贺沙区眼科医疗质控中心启动会在我院成功召开</a>
+            <span class="time">2015-05-01</span>
+          </div>
+          <div class="scroll-news-item">
+            <a href="">热烈祝贺沙区眼科医疗质控中心启动会在</a>
+            <span class="time">2015-05-02</span>
+          </div>
+          <div class="scroll-news-item">
+            <a href="">热烈祝贺沙区眼科医疗质</a>
+            <span class="time">2015-05-03</span>
+          </div>
+          <div class="scroll-news-item">
+            <a href="">热烈祝贺沙区眼科医疗质控中心启</a>
+            <span class="time">2015-05-04</span>
+          </div>
+        </div>
+      </div>
       <a class="btn btn-morenews" href="">更多新闻 +</a>
     </div>
   </div>
@@ -314,20 +330,34 @@
 
         hashnav: true
       });
-    });
-    /* nav */
-    $('.nav-item').hover(function () {
-      $('.nav-content-container').hide();
-      $(this).find('.nav-content-container').show();
-    }, function () {
-      $(this).find('.nav-content-container').hide();
-    });
-    /* tab */
-    $('.tab-head-item').hover(function () {
-      $('.tab-head-item ').removeClass('active');
-      $(this).addClass('active');
-      $('.tab-item').addClass('hide');
-      $($(this).attr('href')).removeClass('hide');
+
+      var newsNum = $('.scroll-news-item').length;
+      console.log(newsNum);
+      var $newsContent = $('.scroll-news-content');
+      var n = 1;
+
+      if(newsNum > 0) {
+        setInterval(function() {
+          if(n === newsNum) {
+            n = 0;
+          }
+          $newsContent.animate({"margin-top": -23 * n++ + 'px'});
+        }, 4000);
+      }
+      /* nav */
+      $('.nav-item').hover(function () {
+        $('.nav-content-container').hide();
+        $(this).find('.nav-content-container').show();
+      }, function () {
+        $(this).find('.nav-content-container').hide();
+      });
+      /* tab */
+      $('.tab-head-item').hover(function () {
+        $('.tab-head-item ').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-item').addClass('hide');
+        $($(this).attr('href')).removeClass('hide');
+      });
     });
   </script>
 </body>

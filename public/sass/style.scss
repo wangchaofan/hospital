@@ -961,11 +961,16 @@ nav {
     }
   }
 }
-.scroll-news-wrap {
+.scroll-news {
   width: 100%;
   height: 57px;
   padding-top: 18px;
   border-bottom: 1px solid #eaeaea;
+  .scroll-news-container {
+    display: inline-block;
+    height: 100px;
+    overflow: hidden;
+  }
   .btn-morenews {
     float: right;
     display: block;
@@ -983,14 +988,22 @@ nav {
     }
   }
 }
+.scroll-news-wrap {
+  display: inline-block;
+  height: 20px;
+  overflow: hidden;
+}
+.scroll-news-content {
+  height: 200px;
+}
 .icon-trumpet {
+  vertical-align: top;
   width: 30px;
   height: 23px;
   background: url('../img/trumpet.png') no-repeat;
 }
-.scroll-news {
+.scroll-news-item {
   position: relative;
-  display: inline-block;
   margin-left: 16px;
   height: 23px;
   font-size: 14px;
