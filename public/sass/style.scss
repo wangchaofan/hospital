@@ -2006,4 +2006,129 @@ footer {
     background-color: #f27e00;
   }
 }
+#qa_search {
+  position: absolute;
+  right: 18px;
+  top: 54px;
+  width: 216px;
+  height: 30px;
+  .search-box {
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    line-height: 30px;
+    color: #c6c6c6;
+    border: 1px solid #c6c6c6;
+    border-radius: 0;
+  }
+  .search-box input {
+    padding-right: 26px;
+    padding-left: 16px;
+    width: 100%;
+    line-height: 30px;
+    outline: none;
+    border: none;
+  }
+  .icon-search {
+    position: absolute;
+    top: 6px;
+    right: 4px;
+    width: 18px;
+    height: 18px;
+    background-size: 100%;
+  }
+}
+#qa_list ul {
+  margin: 0;
+  padding: 0;
+}
+.qa-item {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed #f3f3f3;
+  .question {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #404040;
+    .q {
+      color: #f27e00;
+    }
+  }
+  .answer {
+    height: 46px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #777;
+    line-height: 2;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    p {
+      margin: 0;
+    }
+    .a {
+      color: #69b512;
+    }
+  }
+  .other {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #848484;
+    .time {
+      margin-left: 24px;
+    }
+    .ct {
+      color: #404040;
+    }
+  }
+  .btn-expend {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 88px;
+    padding-left: 20px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background: #f27e00;
+    border-radius: 4px;
+    cursor: pointer;
+    &.expended {
+      .icon-small-arrow {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
+    .icon-small-arrow {
+      float: right;
+      margin-top: 12px;
+      margin-right: 12px;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+    }
+  }
+}
+.icon-small-arrow {
+  display: inline-block;
+  width: 9px;
+  height: 4px;
+  background: url(../img/small_arrow.png) no-repeat;
+}
+
 
