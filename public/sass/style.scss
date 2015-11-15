@@ -2130,5 +2130,23 @@ footer {
   height: 4px;
   background: url(../img/small_arrow.png) no-repeat;
 }
+#paiban_tabel {
+  margin:  20px auto;
+  border: 1px solid #aaa;
+  th, td {
+    padding: 6px 0;
+    width: 100px;
+    text-align: center;
+    color: #333;
+  }
+  td {
+    font-size: 14px;
+  }
+  th {
+    font-size: 16px;
+    height: 30px;
+    border-bottom: 2px solid #bbb;
+  }
+}
 
 

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>门诊排班</title>
+  <link rel="stylesheet" href="public/css/font-awesome.min.css">
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="public/css/swiper3.1.0.min.css">
+  <script src="public/js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+      <span>您好，欢迎来到重庆医科大学附属大学城医院官方网站！</span>
+      <div class="pull-right common-link">
+        <span id="weibo"><i class="fa fa-weibo"></i>官方微博</span>
+        <span id="weixin"><i class="fa fa-weixin"></i>官方微信</span>
+        <span id="mark"><i class="fa fa-heart"></i>收藏本站</span>
+      </div>
+    </div>
+  </header>
+  <!-- 搜索框 -->
+  <div class="wrapper">
+    <div class="guild container" id="">
+      <a href="/"><img class="logo" src="public/img/logo.jpg" alt="logo"></a>
+      <div class="pull-right" id="search">
+        <div class="search-wrapper pull-left" role="search">
+          <input class="search-box" type="text" placeholder="请输入关键字"/>
+          <div class="icon icon-search"></div>
+        </div>
+        <div class="btn btn-small btn-search pull-right">搜索</div>
+      </div>
+    </div>
+    <!-- 导航 -->
+    <nav role="nav">
+      <a class="nav-item" href="/" style="background-color: #f27e00;">
+          <span class="icon icon-nav-home"></span>
+          <p class="title">首页</p>
+        </a>
+      <a class="nav-item" id="summary" style="background-color: #73b02e;">
+        <div class="nav-head">
+          <span class="icon icon-nav-summary"></span>
+          <p class="title">医院概况</p>
+        </div>
+        <div class="nav-content-container">
+          <div class="content">
+            <div class="left sub-nav">
+              <ul>
+                <li>医院介绍<i class="icon icon-arrow-right"></i></li>
+                <li>领导团队<i class="icon icon-arrow-right"></i></li>
+                <li>组织架构<i class="icon icon-arrow-right"></i></li>
+                <li>医院资源<i class="icon icon-arrow-right"></i></li>
+                <li>医院交通<i class="icon icon-arrow-right"></i></li>
+              </ul>
+            </div>
+            <div class="center">
+              <h3>重庆医科大学附属大学城医院</h3>
+              <p>重庆医科大学附属大学城医院是重庆市政府规划，并于2007年11月经重庆市卫生局批准，投资6亿元建设的西部新城唯一一家大型的公共卫生服务机构，是一所集医疗、教学、科研、预防保健为一体的非营利性综合性教学医院，并按三级甲等医院规划建设，规划床位1500张。医院坐落于被誉为教育城、文明城、人才城、科技城、生态城之称的重庆大学城，紧邻重庆医科大学缙云校区。医院占地面积136亩，环境优美、交通发达，服务人口</p>
+            </div>
+            <div class="right">
+              <img src="public/img/map.jpg" align="地图"/>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="nav-item current" id="guide" style="background-color: #3bb3c1;">
+        <div class="nav-head">
+          <span class="icon icon-nav-guide"></span>
+          <p class="title">就医指南</p>
+        </div>
+        <div class="nav-content-container">
+          <div class="content">
+            <div class="left sub-nav">
+              <ul>
+                <li>预约挂号<i class="icon icon-arrow-right"></i></li>
+                <li>取报告单<i class="icon icon-arrow-right"></i></li>
+                <li>门诊指南<i class="icon icon-arrow-right"></i></li>
+                <li>急诊指南<i class="icon icon-arrow-right"></i></li>
+              </ul>
+            </div>
+            <div class="center">
+              <h3>就诊指南</h3>
+              <p>重庆医科大学附属大学城医院是重庆市政府规划，并于2007年11月经重庆市卫生局批准，投资6亿元建设的西部新城唯一一家大型的公共卫生服务机构，是一所集医疗、教学、科研、预防保健为一体的非营利性综合性教学医院，并按三级甲等医院规划建设，规划床位1500张。医院坐落于被誉为教育城、文明城、人才城、科技城、生态城之称的重庆大学城，紧邻重庆医科大学缙云校区。医院占地面积136亩，环境优美、交通发达，服务人口</p>
+            </div>
+            <div class="right">
+              <img src="public/img/map.jpg" align="地图"/>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="nav-item" id="department" style="background-color: #0086c5;">
+        <div class="nav-head">
+          <span class="icon icon-nav-office"></span>
+          <p class="title">科室导航</p>
+        </div>
+        <div class="nav-content-container">
+          <div class="content">
+            <div class="left sub-nav">
+              <ul>
+                <li>科室列表<i class="icon icon-arrow-right"></i></li>
+                <li>门诊排班<i class="icon icon-arrow-right"></i></li>
+                <li>名医荟萃<i class="icon icon-arrow-right"></i></li>
+                <li>医保专区<i class="icon icon-arrow-right"></i></li>
+                <li>楼层分布<i class="icon icon-arrow-right"></i></li>
+              </ul>
+            </div>
+            <div class="center">
+              <h3>热门科室</h3>
+              <div class="hot-depart-list">
+                <span class="hot-depart-item">烧伤外科学</span>
+                <span class="hot-depart-item">妇产科</span>
+                <span class="hot-depart-item">党政办公室</span>
+                <span class="hot-depart-item">放射科</span>
+                <span class="hot-depart-item">消化内科学</span>
+                <span class="hot-depart-item">消化内科学</span>
+                <span class="hot-depart-item">放射科</span>
+                <span class="hot-depart-item">消化内科学</span>
+                <span class="hot-depart-item">消化内科学</span>
+                <span class="hot-depart-item">放射科</span>
+                <span class="hot-depart-item">消化内科学</span>
+                <span class="hot-depart-item">消化内科学</span>
+                <span class="hot-depart-item">放射科</span>
+                <span class="hot-depart-item">消化内科学</span>
+                <span class="hot-depart-item">消化内科学</span>
+              </div>
+            </div>
+            <div class="right">
+              <img src="public/img/map.jpg" align="地图"/>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="nav-item" id="scientific" style="background-color: #3457b0;">
+        <div class="nav-head">
+          <span class="icon icon-nav-teaching"></span>
+          <p class="title">科研教学</p>
+        </div>
+        <div class="nav-content-container">
+          <div class="content">
+            <div class="left sub-nav">
+              <ul>
+                <li>科研申报<i class="icon icon-arrow-right"></i></li>
+                <li>学术团队<i class="icon icon-arrow-right"></i></li>
+                <li>院内教学<i class="icon icon-arrow-right"></i></li>
+                <li>进修培训<i class="icon icon-arrow-right"></i></li>
+                <li>重点学科<i class="icon icon-arrow-right"></i></li>
+              </ul>
+            </div>
+            <div class="center">
+              <h3>科研申报</h3>
+              <p>重庆医科大学附属大学城医院是重庆市政府规划，并于2007年11月经重庆市卫生局批准，投资6亿元建设的西部新城唯一一家大型的公共卫生服务机构，是一所集医疗、教学、科研、预防保健为一体的非营利性综合性教学医院，并按三级甲等医院规划建设，规划床位1500张。医院坐落于被誉为教育城、文明城、人才城、科技城、生态城之称的重庆大学城，紧邻重庆医科大学缙云校区。医院占地面积136亩，环境优美、交通发达，服务人口</p>
+            </div>
+            <div class="right">
+              <img src="public/img/map.jpg" align="地图"/>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="nav-item" id="volunteer" style="background-color: #6943a7;">
+        <div class="nav-head">
+          <span class="icon icon-nav-heart"></span>
+          <p class="title">志愿服务</p>
+        </div>
+        <div class="nav-content-container">
+          <div class="content">
+            <div class="left sub-nav">
+              <ul>
+                <li>服务项目<i class="icon icon-arrow-right"></i></li>
+                <li>义工报名<i class="icon icon-arrow-right"></i></li>
+                <li>志愿者之家<i class="icon icon-arrow-right"></i></li>
+              </ul>
+            </div>
+            <div class="center">
+              <h3>科研申报</h3>
+              <p>重庆医科大学附属大学城医院是重庆市政府规划，并于2007年11月经重庆市卫生局批准，投资6亿元建设的西部新城唯一一家大型的公共卫生服务机构，是一所集医疗、教学、科研、预防保健为一体的非营利性综合性教学医院，并按三级甲等医院规划建设，规划床位1500张。医院坐落于被誉为教育城、文明城、人才城、科技城、生态城之称的重庆大学城，紧邻重庆医科大学缙云校区。医院占地面积136亩，环境优美、交通发达，服务人口</p>
+            </div>
+            <div class="right">
+              <img src="public/img/map.jpg" align="地图"/>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="sub-nav-container">
+        <div class="sub-nav">
+          <a class="sub-nav-item" href="">搜索医生</a>
+          <a class="sub-nav-item" href="">预约挂号</a>
+          <a class="sub-nav-item" href="">来院指南</a>
+          <a class="sub-nav-item" href="">联系我们</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- banner -->
+  <div id="banner">
+    <img src="public/img/department_banner.jpg" alt="">
+  </div>
+  <!-- content -->
+  <div id="content" class="wrapper clearfix">
+    <div class="left-container">
+      <div class="aside-nav">
+        <div class="header">
+          <p class="name-cn">科室导航</p>
+          <p class="name-en">Department</p>
+        </div>
+        <div>
+          <div class="aside-nav-item">
+            科室列表 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item selected">
+            门诊排班 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item">
+            名医荟萃 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item">
+            医保专区 <i class="fa fa-angle-right"></i>
+          </div>
+          <div class="aside-nav-item">
+            楼层分布 <i class="fa fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center-container">
+      <div class="header">
+         <span class="snav">
+        <i class="fa fa-home"></i>
+      </span>
+      <span class="snav">
+         科室导航
+      </span>
+      <span class="snav">
+        门诊排班
+      </span>
+      </div>
+      <div class="content">
+        <div class="title">
+          <span>门诊排班</span>
+        </div>
+        <table id="paiban_tabel" cellspacing="0" cellpadding="1" border="1px solide #f0f0f0">
+          <thead>
+            <th>科别</th>
+            <th>时间</th>
+            <th>星期一</th>
+            <th>星期二</th>
+            <th>星期三</th>
+            <th>星期四</th>
+            <th>星期五</th>
+            <th>星期六</th>
+            <th>星期日</th>
+            <th>备注</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">儿科知名</td>
+              <td>上午</td>
+              <td>冷志勤志勤<br/>姜蓉<br> 杨斌</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+            </tr>
+            <tr>
+              <td>下午</td>
+              <td>冷志勤<br/>姜蓉<br> 杨斌</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+              <td>二科知名</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="container clearfix">
+      <div class="pull-left" id="logoAndSc">
+        <a href="/"><img class="logo" src="public/img/footer-logo.jpg" alt="logo"/></a>
+        <div class="social-contact">
+          <span class="fa fa-weibo"></span>
+          <span class="fa fa-qq"></span>
+          <span class="fa fa-weixin"></span>
+        </div>
+      </div>
+         <div class="pull-left" id="recruit">
+           <h2>招贤纳士</h2>
+           <p><a href="http://www.u-hospital-cqmu.cn">http://www.u-hospital-cqmu.cn</a></p>
+         </div>
+        <div class="pull-left" id="contact">
+          <h2>联系我们</h2>
+          <p>地址：重庆市沙坪坝区大学城中路55号 <span class="pull-right">邮编：401331</span></p>
+          <p>门诊部办公室电话：<tel>023-65715611</tel> <span class="pull-right">咨询电话：<tel>023-65715700</tel></span></p>
+          <p>夜间值班电话：<tel>023-65715757</tel></p>
+        </div>
+      </div>
+    <div id="copeRight">
+      <div class="container">
+        opyright © 2013-2015 重庆医科大学附属大学城医院  保留所有权利.
+      </div>
+    </div>
+  </footer>
+  <script src="http://cdn.bootcss.com/Swiper/3.1.0/js/swiper.jquery.min.js"></script>
+  <script src="public/js/main.js"></script>
+</body>
+</html>
